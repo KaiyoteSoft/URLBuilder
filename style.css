@@ -1,0 +1,28 @@
+body {
+	font-family: 'Raleway', sans-serif;
+}
+input{
+	width: 250px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+button {
+	margin-top: 20px;
+}
+
+#header, h1 {
+	text-align: center;
+	font-weight: bold;
+}
+
+#baseUrl {
+	width: 350px;
+}
+
+#outputField {
+	margin-top: 10px;
+	margin-bottom: 50px;
+	border: 1px solid black;
+	padding: 10px;
+	white-space: nowrap;
+}

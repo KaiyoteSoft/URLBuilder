@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Url builder</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+   	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="builder.js"></script>
+</head>
+<body>
+<div class="container">
+	<div id="header">
+		<h1>URL Builder for Bill.com</h1>
+		<p>This program lets you build custom URL's. Simply input the corresponding 
+			information into the fields below. You're URL will be generated when you press
+			the "Generate URL" button</p>
+	</div>
+	<div class="row">
+		<div class="col-md-7">
+			<h3>Input base Url</h3>
+			<form name="baseUrl">
+		      <input id="baseUrl" type="text" name="baseType" placeholder="Eg) http://cashflow.bill.com.html"> 
+		    </form>
+		    <h3>Medium Source</h3>
+			<form name="medium">
+		    	<input type="text" name="mediumType" placeholder="Eg) social">
+		    </form>
+		    <h3>Lead Source</h3>
+		    <form name="leadSource">
+		    	<input type="text" name="leadSourceType" placeholder="Eg) social">
+		    </form>
+		    <h3>Lead Source Description</h3>
+		    <form name="leadSourceDesc">
+		    	<input type="text" name="leadSourceDescType" placeholder="Eg) twitter">
+		    </form>
+		</div>
+		<div class="col-md-5">
+		    <h3>First Touch</h3>
+		    <form name="firstTouch">
+		    	<input type="text" name="firstTouchType" placeholder="Eg) twitter">
+		    </form>
+		    <h3>First Touch Description</h3>
+		    <form name="firstTouchDesc">
+		    	<input type="text" name="firstTouchDescType" placeholder="Eg) acct_survey">
+		    </form>
+		    <h3>Last Touch</h3>
+		    <form name="lastTouch">
+		    	<input type="text" name="lastTouchType" placeholder="Eg) twitter">
+		    </form>
+		    <h3>Last Touch Description</h3>
+		    <form name="lastTouchDesc">
+		    	<input type="text" name="lastTouchDescType" placeholder="Eg) acct_survey">
+		    </form>
+		</div>
+	</div>
+
+
+    <button type="button" class="btn btn-primary" onClick="generateUrl()">Generate URL</button>
+
+
+   	<div id="outputBox"></div>
+<!--    	<input type="text" name="outputField" id="outputField" style="overflow: auto; width= 200px; height=100px;"> -->
+   	<div style="overflow: auto; width:500px; height:60px;" id="outputField"></div>
+</div>
+</body>
+</html>
