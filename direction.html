@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>Directions for Url builder</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+   	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="builder.js"></script>
+
+	<style>
+	  table, th, td {
+	  border: 1px solid black;
+	  }
+	  th, td {
+	  padding: 15px;
+	  }
+	  </style>
+
+</head>
+<body>
+<div class="container">
+	<div id="header">
+	  <h1>Directions for Bill.com URL Builder</h1>
+	  <p><a href="index.html">Back to main tool</a>
+	    </p>
+	</div>
+	
+	<h2> Example Codes</h2>
+	<table>
+	  <tr><th>Marketo Code</th><th>Example Attribute</th><th>Notes</th></tr>
+	  <tr><td>first_touch_desc <br>
+	      last_touch_desc</br></td>
+	    <td>wbr_mkt_082715</td>
+	    <td>Get code from Natasha</td>
+	  </tr>
+	  <tr>
+	    <td>medium<br>lead_source</td>
+	    <td>social</td>
+	    <td>Set as default</td>
+	  </tr>
+	  <tr>
+	    <td>lead_source_desc<br>first_touch<br>last_touch</td>
+	    <td>twitter<br>facebook<br> linked<br>
+	      googleplus<br>linkedin_ad<br>facebook_ad<br>twitter_ad
+	    </td>
+	    <td>To do: drop down menu </td>
+	  </tr>
+	  
+	  </table>
+
+	<h2>Program Attribution</h2>
+	<table>
+	  <tr>
+	    <th>Description</th><th>Marketo Tracking Code</th><th>Permanent</th>
+	  </tr>
+	  <tr>
+	    <td>Medium</td><td>medium</td><td>no</td>
+	  </tr>
+	  <tr>
+	    <td>Lead Source</td><td>lead_source</td><td>yes</td>
+	  </tr>
+	  <tr>
+	    <td>Lead Source Description</td><td>lead_source_desc</td><td>yes</td>
+	  </tr>
+	  <tr>
+	    <td>Lead First Touch</td><td>first_touch</td><td>yes</td>
+	  </tr>
+	  <tr>
+	    <td>First Touch Description</td><td>first_touch_desc</td><td>yes</td>
+	  </tr>
+	  <tr>
+	    <td>Lead Last Touch</td><td>last_touch</td><td>no</td>
+	  </tr>
+	  <tr>
+	    <td>Last Touch Description</td><td>last_touch_desc</td><td>no</td>
+	  </tr>
+	</table>
+	<br>
+	</br>
+		
+</div>
+</body>
+</html>
