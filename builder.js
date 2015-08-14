@@ -20,13 +20,13 @@ function generateUrl() {
 	"&first_touch_desc=" + firstTouchDesc + "&last_touch=" + lastTouch +
 	"&last_touch_desc=" + lastTouchDesc;
 	$('#outputField').html(output);
+}
 
-	// document.baseUrl.baseType.value = ('');
-	// document.medium.mediumType.value = ('');
-	// document.leadSource.leadSourceType.value = ('');
-	// document.leadSourceDesc.leadSourceDescType.value = ('');
-	// document.firstTouch.firstTouchType.value = ('');
-	// document.firstTouchDesc.firstTouchDescType.value = ('');
-	// document.lastTouch.lastTouchType.value = ('');
-	// document.lastTouchDesc.lastTouchDescType.value = ('');
+function fillTouch() {
+	document.getElementById('firstTouchType').value = document.getElementById('leadSourceDescType').value;
+	document.getElementById('lastTouchType').value = document.getElementById('leadSourceDescType').value;
+}
+
+function fillDescription() {
+	document.getElementById('lastTouchDescType').value = document.getElementById('firstTouchDescType').value;
 }
