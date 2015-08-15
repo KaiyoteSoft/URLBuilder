@@ -18,54 +18,67 @@
 	</div>
 	<div class="row">
 		<div class="col-md-7">
-			<h3>Input base Url</h3>
+			<h3 class="headerFont">Input base Url</h3>
 			<form name="baseUrl">
 		      <input id="baseUrl" type="text" name="baseType" placeholder="Eg) http://cashflow.bill.com.html"value="http://cashflow.bill.com/"> 
 		    </form>
-		    <h3>Medium Source</h3>
+		    <h3 class="headerFont">Medium Source</h3>
 			<form name="medium">
 		    	<input type="text" name="mediumType" placeholder="Eg) social" value="social">
 		    </form>
-		    <h3>Lead Source</h3>
+		    <h3 class="headerFont">Lead Source</h3>
 		    <form name="leadSource">
 		    	<input type="text" name="leadSourceType" placeholder="Eg) social" value="social">
 		    </form>
-		    <h3>Lead Source Description</h3>
+		    <h3 class="headerFont">Lead Source Description</h3>
 		    <form name="leadSourceDesc">
-		    	<input type="text" name="leadSourceDescType" id="leadSourceDescType" placeholder="Eg) twitter">
+		    	<div class="dropdown" id="descriptionDropdown">
+	    		  <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">Possible Descriptions
+	    		  <span class="caret"></span></button>
+	    		  <ul class="dropdown-menu">
+	    		    <li><a onClick="chooseValue('twitter')">twitter</a></li>
+	    		    <li><a onClick="chooseValue('facebook')">facebook</a></li>
+	    		    <li><a onClick="chooseValue('googleplus')">googleplus</a></li>
+	    		    <li><a onClick="chooseValue('linkedin_ad')">linkedin_ad</a></li>
+	    		    <li><a onClick="chooseValue('facebook_ad')">facebook_ad</a></li>
+	    		    <li><a onClick="chooseValue('twitter_ad')">twitter_ad</a></li>
+	    		  </ul>
+	    		</div>
+		    	<input type="text" name="leadSourceDescType" id="leadSourceDescType" placeholder="Eg) twitter" value="twitter">
 		    	<button type="button" class="btn btn-success" onClick="fillTouch()">Auto Fill</button>
 		    </form>
 		</div>
 		<div class="col-md-5">
-		    <h3>First Touch</h3>
+		    <h3 class="headerFont">First Touch</h3>
 		    <form name="firstTouch">
 		    	<input type="text" name="firstTouchType" id="firstTouchType" placeholder="Eg) twitter">
 		    </form>
-		    <h3>First Touch Description</h3>
+		    <h3 class="headerFont">First Touch Description</h3>
 		    <form name="firstTouchDesc">
-		    	<input type="text" name="firstTouchDescType" id="firstTouchDescType" placeholder="Eg) acct_survey">
+		    	<input type="text" name="firstTouchDescType" id="firstTouchDescType" placeholder="Eg) wbr_mkt_082715" value="wbr_mkt_082715">
 		    	<button type="button" class="btn btn-danger" onClick="fillDescription()">Auto Fill</button>
 		    </form>
-		    <h3>Last Touch</h3>
+		    <h3 class="headerFont">Last Touch</h3>
 		    <form name="lastTouch">
 		    	<input type="text" name="lastTouchType" id="lastTouchType" placeholder="Eg) twitter">
 		    </form>
-		    <h3>Last Touch Description</h3>
+		    <h3 class="headerFont">Last Touch Description</h3>
 		    <form name="lastTouchDesc">
-		    	<input type="text" name="lastTouchDescType" id="lastTouchDescType" placeholder="Eg) acct_survey">
+		    	<input type="text" name="lastTouchDescType" id="lastTouchDescType" placeholder="Eg) wbr_mkt_082715">
 		    </form>
 		</div>
 	</div>
 
 
     <button type="button" class="btn btn-primary" onClick="generateUrl()">Generate URL</button>
+    <a type="button" class="btn btn-primary" id="saveButton" href="https://docs.google.com/forms/d/1YFedNijBP4uTnJ9bcpIofxUHUu-O7ajxENjf0sogObg/viewform?usp=send_form" target="_blank">Save URL to Google Sheets</a>
 
 
    	<div id="outputBox"></div>
 <!--    	<input type="text" name="outputField" id="outputField" style="overflow: auto; width= 200px; height=100px;"> -->
 <div style="overflow: auto; width:500px; height:60px;" id="outputField"></div>
 
-<a href="direction.html">Directions and Examples</a>
+<span class="descriptionText"><a href="direction.html">Directions and Examples --></a></span>
 </div>
 </body>
 </html>

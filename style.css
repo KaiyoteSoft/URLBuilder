@@ -15,14 +15,34 @@ button {
 	font-weight: bold;
 }
 
+.headerFont {
+	font-weight: bold;
+}
+
 #baseUrl {
 	width: 350px;
 }
 
+#descriptionDropdown {
+	margin-top: -14px;
+}
+
+#saveButton {
+	float: right;
+	margin-top: 50px;
+	margin-bottom: 5px;
+}
+
 #outputField {
 	margin-top: 10px;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 	border: 1px solid black;
 	padding: 10px;
 	white-space: nowrap;
+}
+
+.descriptionText {
+	font-size: 150%;
+	margin-bottom: 70px;
+	float: right;
 }

@@ -30,3 +30,8 @@ function fillTouch() {
 function fillDescription() {
 	document.getElementById('lastTouchDescType').value = document.getElementById('firstTouchDescType').value;
 }
+
+function chooseValue(mediaType) {
+	var dropdownValue = mediaType;
+	document.getElementById('leadSourceDescType').value = dropdownValue;
+}
